@@ -317,5 +317,369 @@
         .pub-link {
             display: inline-flex;
             align-items: center;
-            color:var(--cyan);
-}
+            color: var(--orange);
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s ease;
+        }
+
+        .pub-link:hover {
+            border-color: var(--orange);
+        }
+
+        /* CONTACT */
+
+        #contact {
+            max-width: 100%;
+            background: var(--light-bg);
+        }
+
+        .contact-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .contact-info {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 14px;
+            margin-top: 2rem;
+            border: 1px solid var(--border-color);
+            display: inline-block;
+            min-width: 320px;
+        }
+
+        .contact-line {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-label {
+            font-weight: 600;
+            min-width: 90px;
+            color: var(--dark-text);
+        }
+
+        .contact-value a {
+            color: var(--orange);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+        }
+
+        .contact-value a:hover {
+            border-color: var(--orange);
+        }
+
+        /* FOOTER */
+
+        footer {
+            text-align: center;
+            padding: 3rem 2rem;
+            background: var(--dark-bg);
+            color: rgba(255, 255, 255, 0.55);
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        /* RESPONSIVE */
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            section {
+                padding: 5rem 1.5rem;
+            }
+
+            #hero {
+                padding: 11rem 1.5rem 6rem;
+            }
+
+            .highlights {
+                grid-template-columns: 1fr;
+            }
+
+            .highlight-card {
+                padding: 2rem;
+            }
+        }
+
+        @media (max-width: 550px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            nav ul {
+                justify-content: center;
+                gap: 1rem;
+            }
+
+            #hero {
+                padding-top: 14rem;
+            }
+
+            .contact-info {
+                width: 100%;
+                min-width: unset;
+            }
+
+            .contact-line {
+                flex-direction: column;
+                gap: 0.3rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-container">
+
+            <a href="#hero" class="logo-link" aria-label="Citrapeutics Home">
+                <img
+                    src="Citrapeutics Inverted Color.png"
+                    alt="Citrapeutics Logo"
+                    class="logo-img"
+                />
+            </a>
+
+            <ul>
+                <li><a href="#science">Science</a></li>
+                <li><a href="#validation">Validation</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="hero-container">
+
+            <div class="tagline">
+                First-in-Class ACOD1 Inhibitors
+            </div>
+
+            <h1>
+                Targeting Immunometabolism for Next-Generation Cancer Therapy
+            </h1>
+
+            <p class="hero-text">
+                Citrapeutics is developing oral small-molecule inhibitors targeting
+                ACOD1 (IRG1), a key immunometabolic pathway implicated in tumor-driven
+                immune suppression. Our platform aims to restore anti-tumor immunity
+                across multiple solid tumor indications.
+            </p>
+
+        </div>
+    </section>
+
+    <section id="science">
+
+        <div class="section-inner">
+
+            <h2>Scientific Platform</h2>
+
+            <p>
+                ACOD1 is a metabolic enzyme expressed in activated myeloid cells that
+                drives production of the immunosuppressive metabolite itaconate.
+            </p>
+
+            <p>
+                Elevated ACOD1 activity has been associated with impaired T-cell
+                function, tumor immune evasion, and resistance to checkpoint blockade
+                therapies.
+            </p>
+
+            <p>
+                Citrapeutics is advancing a pipeline of selective, orally bioavailable
+                small molecules designed to inhibit ACOD1 and reprogram the tumor
+                microenvironment toward durable anti-tumor immunity.
+            </p>
+
+            <div class="indications">
+                <div class="indication-tag">Melanoma</div>
+                <div class="indication-tag">NSCLC</div>
+                <div class="indication-tag">Colorectal Cancer</div>
+                <div class="indication-tag">Triple-Negative Breast Cancer</div>
+                <div class="indication-tag">Combination Immunotherapy</div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="validation">
+
+        <div class="validation-container">
+
+            <div class="section-inner">
+
+                <h2>Preclinical Validation</h2>
+
+                <p>
+                    Our research demonstrates that ACOD1 inhibition can enhance immune
+                    activation and synergize with checkpoint inhibitors in multiple
+                    preclinical tumor models.
+                </p>
+
+            </div>
+
+            <div class="highlights">
+
+                <div class="highlight-card">
+                    <h3>Immune Reactivation</h3>
+
+                    <p>
+                        Restoration of T-cell effector function and reversal of
+                        immunosuppressive signaling in tumor-associated myeloid cells.
+                    </p>
+                </div>
+
+                <div class="highlight-card">
+                    <h3>Oral Small Molecules</h3>
+
+                    <p>
+                        Selective inhibitors optimized for potency, oral bioavailability,
+                        and scalable manufacturing.
+                    </p>
+                </div>
+
+                <div class="highlight-card">
+                    <h3>Combination Potential</h3>
+
+                    <p>
+                        Designed to synergize with PD-1 and checkpoint blockade therapies
+                        across multiple tumor settings.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="publications">
+
+        <div class="section-inner">
+
+            <h2>Selected Publications</h2>
+
+            <p>
+                Representative scientific publications and foundational research related
+                to ACOD1 biology and tumor immunometabolism.
+            </p>
+
+            <div class="pub-list">
+
+                <div class="pub-item">
+
+                    <div class="pub-title">
+                        Itaconate as a regulator of macrophage function in inflammation
+                        and cancer
+                    </div>
+
+                    <div class="pub-meta">
+                        Nature Reviews Immunology
+                    </div>
+
+                    <a href="#" class="pub-link">
+                        View Publication →
+                    </a>
+
+                </div>
+
+                <div class="pub-item">
+
+                    <div class="pub-title">
+                        Targeting immunometabolism to improve cancer immunotherapy
+                    </div>
+
+                    <div class="pub-meta">
+                        Cancer Discovery
+                    </div>
+
+                    <a href="#" class="pub-link">
+                        View Publication →
+                    </a>
+
+                </div>
+
+                <div class="pub-item">
+
+                    <div class="pub-title">
+                        ACOD1-mediated metabolic signaling in the tumor microenvironment
+                    </div>
+
+                    <div class="pub-meta">
+                        Cell Metabolism
+                    </div>
+
+                    <a href="#" class="pub-link">
+                        View Publication →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="contact">
+
+        <div class="contact-container">
+
+            <div class="section-inner">
+
+                <h2>Contact</h2>
+
+                <p>
+                    For partnership, scientific, or investor inquiries, please contact
+                    the Citrapeutics team.
+                </p>
+
+                <div class="contact-info">
+
+                    <div class="contact-line">
+                        <div class="contact-label">Email</div>
+
+                        <div class="contact-value">
+                            <a href="mailto:info@stavendo.com">
+                                info@stavendo.com
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-line">
+                        <div class="contact-label">Website</div>
+
+                        <div class="contact-value">
+                            <a href="#">
+                                citrapeutics.ch
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        © 2026 Citrapeutics. All rights reserved.
+    </footer>
+
+</body>
+</html>
