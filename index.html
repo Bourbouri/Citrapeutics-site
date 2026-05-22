@@ -111,7 +111,7 @@
             color: var(--body-text);
             font-size: 1.05rem;
         }
-        /* Hero Section (Dark & Immersive) */
+        /* Hero Section */
         #hero {
             max-width: 100%;
             background-color: var(--dark-bg);
@@ -257,4 +257,109 @@
             transition: border-color 0.2s ease;
         }
         .pub-link:hover {
-            border-color: var(--orange
+            border-color: var(--orange);
+        }
+        /* Contact Section */
+        #contact {
+            background-color: var(--light-bg);
+            max-width: 100%;
+        }
+        .contact-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        .contact-info {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 12px;
+            margin-top: 2rem;
+            border: 1px solid var(--border-color);
+            display: inline-block;
+            min-width: 320px;
+        }
+        .contact-line {
+            display: flex;
+            font-size: 1.05rem;
+        }
+        .contact-label {
+            font-weight: 600;
+            width: 100px;
+            color: var(--dark-text);
+        }
+        .contact-value a {
+            color: var(--orange);
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s ease;
+        }
+        .contact-value a:hover {
+            border-color: var(--orange);
+        }
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 3rem 2rem;
+            background: var(--dark-bg);
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        /* Responsive Framework */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            section {
+                padding: 5rem 1.5rem;
+            }
+            #hero {
+                padding: 11rem 1.5rem 6rem 1.5rem;
+            }
+            .highlights {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            .highlight-card {
+                padding: 2rem;
+            }
+        }
+        @media (max-width: 550px) {
+            nav .nav-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            nav ul {
+                gap: 1.5rem;
+            }
+            #hero {
+                padding-top: 13rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <a href="#hero" class="logo-link">
+                <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1026.04 167.36">
+                    <defs>
+                        <style>
+                            .cls-1{fill:#3ac4e0;}.cls-2{fill:#e67300;}.cls-3{fill:#ffffff;}
+                        </style>
+                    </defs>
+                    <g id="Layer_2" data-name="Layer 2">
+                        <g id="Layer_1-2" data-name="Layer 1">
+                            <rect class="cls-1" x="25.54" y="28.98" width="13.12" height="106.63" rx="6.56" ry="6.56"/>
+                            <rect class="cls-1" x="51.78" y="28.98" width="13.12" height="106.63" rx="6.56" ry="6.56"/>
+                            <rect class="cls-2" x="78.03" y="11.45" width="13.12" height="141.69" rx="6.56" ry="6.56"/>
+                            <rect class="cls-1" x="104.28" y="28.98" width="13.12" height="106.63" rx="6.56" ry="6.56"/>
+                            <rect class="cls-1" x="130.52" y="28.98" width="13.12" height="106.63" rx="6.56" ry="6.56"/>
+                            <path class="cls-3" d="M239,122a45,45,0,0,1-16.71-3.09,38.16,38.16,0,0,1-13.17-8.62,39.06,39.06,0,0,1-8.58-13.38,45.86,45.86,0,0,1,0-34.14,39.46,39.46,0,0,1,8.58-13.43,38.27,38.27,0,0,1,13.17-8.62A45.05,45.05,0,0,1,239,37.62a48.56,48.56,0,0,1,15.77,2.53,40.11,40.11,0,0,1,12.75,7.12l-9.14,9.41a30.82,30.82,0,0,0-9.28-5.06,33.43,33.43,0,0,0-10.1-1.55,29.83,29.83,0,0,0-22,8.86q-8.65,8.85-8.65,22.86t8.65,22.82A29.81,29.81,0,0,0,239,103.49a34.42,34.42,0,0,0,10.74-1.62,29.15,29.15,0,0,0,9.41-5.12l9.14,9a40.35,40.35,0,0,1-13.17,7.45A51.35,51.35,0,0,1,239,122Z"/>
+                            <path class="cls-3" d="M288.64,48.94h14V120.4h-14ZM287.43,32.5a7.3,7.3,0,0,1,2.12-5.32,7.18,7.18,0,0,1,5.26-2.12,7,7,0,0,1,5.19,2.12,7.35,7.35,0,0,1,2.09,5.32,7.24,7.24,0,0,1-2.09,5.25,7.09,7.09,0,0,1-5.19,2.09,7.22,7.22,0,0,1-5.26-2.09A7.17,7.17,0,0,1,287.43,32.5Z"/>
+                            <path class="cls-3" d="M334.33,48.94h10.38l1.62,8.62h.54A18,18,0,0,1,353,50.69a19.46,19.46,0,0,1,8.36-1.75c3.81,0,7,.79,9.47,2.36a14.77,14.77,0,0,1,5.43,6.37,27.17,27.17,0,0,1,2.12,7.85q.41,3.84.4,10.65V120.4H354.78V79.27q0-6.47-.84-9.37a7.61,7.61,0,0,0-3-4.52,9.37,9.37,0,0,0-5.69-1.68,11.59,11.59,0,0,0-6.17,1.72,13.67,13.67,0,0,0-4.68,4.75V120.4H334.33Z"/>
+                            <path class="cls-3" d="M407.05,48.94h8.36L417,58h.54a17.2,17.2,0,0,1,5.73-6.91,15.65,15.65,0,0,1,9-2.52,18.42,18.42,0,0,1,4.41.54V59.46A21,21,0,0,0,441,58.6a14.15,14.15,0,0,0-8.12,2.39,13.15,13.15,0,0,0-5.22,6.77V120.4H407.05Z"/>
+                            <path class="cls-3" d="M473.53,122a27,27,0,0,1-11-2.19,22,22,0,0,1-8.15-6.17,24,24,0,0,1-4.62-9.33,39.69,39.69,0,0,1-1.52-11.22c0-4,.52-7.81,1.55-11.39a25,25,0,0,1,4.68-9.1,22.25,22.25,0,0,1,8.19-5.93,26.79,26.79,0,0,1,11.22-2.22,23.51,23.51,0,0,1,11.33,2.59,19.5,19.5,0,0,1,7.44,7.25h.41l-.41-7.82V39.91h14.09V120.4H496.38l-1.62-7.82h-.54a18.3,18.3,0,0,1-7.91,6.84A25.68,25.68,0,0,1,473.53,122Zm2.56-11.32a13.43,13.43,0,0,0,10.21-4.25q4-4.25,4-12.74t-4-12.87a13.49,13.49,0,0,0-10.21-4.31,12.74,12.74,0,0,0-9.84,4.28q-3.87,4.27-3.87,12.9t3.87,12.77A12.72,12.72,0,0,0,476.09,110.68Z"/>
+                            <path class="cls-3" d="M565.41,122a28.21,28.21,0,0,1-11.39-2.26,24.47,24.47,0,0,1-8.59-6.3,27,27,0,0,1-5.46-9.43,34.82,34.82,0,0,1-1.88-11.49,32.74,32.74,0,0,1,2-11.46A27.13,27.13,0,0,1,545.74,71.7a24.81,24.81,0,0,1,8.73-6.17,2
