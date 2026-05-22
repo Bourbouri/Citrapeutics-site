@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citrapeutics | Targeting ACOD1 for Cancer Immunotherapy</title>
+    <meta name="description" content="Citrapeutics is developing first-in-class ACOD1 inhibitors for cancer immunotherapy. Preclinical-stage, oral small molecules.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root {
+            --orange: #E67300;
+            --cyan: #3AC4E0;
+            --dark: #2D2D2D;
+            --gray: #555;
+            --light-gray: #F7F7F7;
+            --white: #FFFFFF;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--dark);
+            line-height: 1.6;
+            font-size: 17px;
+            background-color: var(--white);
+        }
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: var(--white);
+            border-bottom: 1px solid #eee;
+            z-index: 1000;
+            padding: 1rem 2rem;
+        }
+        nav .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav .logo {
+            font-weight: 700;
+            font-size: 1.4rem;
+            color: var(--dark);
+            text-decoration: none;
+        }
+        nav .logo span.c {
+            color: var(--orange);
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: var(--gray);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+        nav ul li a:hover {
+            color: var(--orange);
+        }
+        /* Sections */
+        section {
+            padding: 6rem 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        section:first-of-type {
+            padding-top: 10rem;
+        }
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: var(--dark);
+        }
+        h2::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: var(--orange);
+            margin-top: 0.5rem;
+        }
+        p {
+            margin-bottom: 1.2rem;
+            color: var(--gray);
+        }
+        .tagline {
+            font-size: 1.3rem;
+            color: var(--cyan);
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+        }
+        .hero-text {
+            font-size: 1.15rem;
+            max-width: 700px;
+        }
+        /* Highlights / Awards */
+        .highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .highlight-card {
+            background: var(--light-gray);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--orange);
+        }
+        .highlight-card h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--dark);
+        }
+        .highlight-card p {
+            font-size: 0.95rem;
+            margin-bottom: 0;
+        }
+        /* Indications list */
+        .indications {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .indication-tag {
+            background: var(--cyan);
+            color: var(--white);
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        /* Contact */
+        .contact-info {
+            background: var(--light-gray);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-top: 1.5rem;
+        }
+        .contact-info p {
+            margin-bottom: 0.5rem;
+        }
+        .contact-info p:last-child {
+            margin-bottom: 0;
+        }
+        .contact-info a {
+            color: var(--orange);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: var(--dark);
+            color: var(--white);
+            font-size: 0.9rem;
+            margin-top: 4rem;
+        }
+        footer a {
+            color: var(--cyan);
+        }
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav ul {
+                gap: 1rem;
+            }
+            nav ul li a {
+                font-size: 0.85rem;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            section {
+                padding: 4rem 1.5rem;
+            }
+            section:first-of-type {
+                padding-top: 8rem;
+            }
+        }
+        @media (max-width: 500px) {
+            nav .nav-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            nav ul {
+                gap: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <a href="#hero" class="logo"><span class="c">C</span>itrapeutics</a>
+            <ul>
+                <li><a href="#science">Science</a></li>
+                <li><a href="#validation">Recognition</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <h1>Unlocking ACOD1 for Cancer Immunotherapy</h1>
+        <p class="tagline">First-in-class. First-on-target. Oral small molecules.</p>
+        <p class="hero-text">
+            Citrapeutics is a preclinical-stage venture developing novel inhibitors of ACOD1 (IRG1), a newly validated immunotherapeutic target. Our orally administered small molecules aim to restore anti-tumor immunity across multiple solid tumor types.
+        </p>
+    </section>
+
+    <section id="science">
+        <h2>The Science</h2>
+        <p>
+            <strong>ACOD1</strong> (Aconitate Decarboxylase 1, also known as IRG1) is an enzyme highly expressed in tumor-associated myeloid cells. It produces <strong>itaconic acid</strong>, a metabolite that suppresses anti-tumor immune responses and promotes an immunosuppressive tumor microenvironment.
+        </p>
+        <p>
+            By inhibiting ACOD1, Citrapeutics' compounds aim to reprogram myeloid cells toward a pro-inflammatory, anti-tumor phenotype—restoring the immune system's ability to recognize and attack cancer cells. Our platform has demonstrated significant preclinical evidence in three independent mouse models as a monotherapy.
+        </p>
+        <p>
+            <strong>A Targeted, Indication-Agnostic Approach:</strong> ACOD1 serves as both the therapeutic target and a predictive biomarker. Our target patient population includes individuals with high tumor tissue ACOD1 expression or high levels of circulating itaconic acid in the bloodstream. 
+        </p>
+        <p>Current indications with high tumor tissue ACOD1 expression include:</p>
+        
+        <div class="indications">
+            <span class="indication-tag">Breast Cancer</span>
+            <span class="indication-tag">Head & Neck Cancer</span>
+            <span class="indication-tag">Stomach Cancer</span>
+            <span class="indication-tag">Lung Cancer</span>
+            <span class="indication-tag">Colon Cancer</span>
+            <span class="indication-tag">Skin Cancer</span>
+        </div>
+
+        <p>Published data and research posters are available upon request.</p>
+    </section>
+
+    <section id="validation">
+        <h2>Recognition & Funding</h2>
+        <p>
+            Citrapeutics' science and approach have been validated by leading industry bodies and public funding organizations.
+        </p>
+        <div class="highlights">
+            <div class="highlight-card">
+                <h3>🏆 Biovaria 2025</h3>
+                <p>Winner of the prestigious <strong>Best Emerging Startup</strong> award at Biovaria in Munich, Europe's premier life-science partnering event.</p>
+            </div>
+            <div class="highlight-card">
+                <h3>💶 IBT Lower Saxony Grant</h3>
+                <p>Awarded a <strong>€1.4 million non-dilutive grant</strong> to advance our preclinical development program toward clinical validation.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>
+            Interested in partnering, investing, or learning more about our research? We would love to hear from you.
+        </p>
+        <div class="contact-info">
+            <p><strong>Email:</strong> <a href="mailto:info@citrapeutics.com">info@citrapeutics.com</a></p>
+            <p><strong>Location:</strong> Lower Saxony, Germany</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Citrapeutics. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
