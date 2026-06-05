@@ -3,29 +3,23 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Citrapeutics™ | Targeting ACOD1 for Cancer Immunotherapy</title>
-
     <meta
         name="description"
         content="Citrapeutics™ is developing first-in-class ACOD1 inhibitors for cancer immunotherapy. Preclinical-stage, oral small molecules."
     />
-
     <link rel="preconnect" href="[fonts.googleapis.com](https://fonts.googleapis.com)" />
     <link rel="preconnect" href="[fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin />
-
     <link
         href="[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap)"
         rel="stylesheet"
     />
-
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
         :root {
             --orange: #e67300;
             --cyan: #3ac4e0;
@@ -37,11 +31,7 @@
             --white: #ffffff;
             --border-color: #e2e8f0;
         }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
+        html { scroll-behavior: smooth; }
         body {
             font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
             color: var(--dark-text);
@@ -50,9 +40,7 @@
             background-color: var(--white);
             -webkit-font-smoothing: antialiased;
         }
-
         /* NAVIGATION */
-
         nav {
             position: fixed;
             top: 0;
@@ -64,7 +52,6 @@
             padding: 1rem 2rem;
             border-bottom: 1px solid rgba(255, 255, 255, 0.08);
         }
-
         .nav-container {
             max-width: 1100px;
             margin: 0 auto;
@@ -72,27 +59,23 @@
             justify-content: space-between;
             align-items: center;
         }
-
         .logo-link {
             display: flex;
             align-items: center;
             text-decoration: none;
         }
-
         .logo-img {
             height: 42px;
             width: auto;
             display: block;
             object-fit: contain;
         }
-
         nav ul {
             list-style: none;
             display: flex;
             gap: 2rem;
             flex-wrap: wrap;
         }
-
         nav ul li a {
             text-decoration: none;
             color: rgba(255, 255, 255, 0.78);
@@ -100,24 +83,19 @@
             font-size: 0.92rem;
             transition: color 0.2s ease;
         }
-
         nav ul li a:hover,
         nav ul li a:focus-visible {
             color: var(--cyan);
         }
-
         /* GLOBAL SECTION STYLES */
-
         section {
             padding: 7rem 2rem;
             max-width: 1100px;
             margin: 0 auto;
         }
-
         .section-inner {
             max-width: 800px;
         }
-
         h1 {
             font-size: 3.4rem;
             font-weight: 700;
@@ -126,7 +104,6 @@
             line-height: 1.15;
             letter-spacing: -1px;
         }
-
         h2 {
             font-size: 2rem;
             font-weight: 700;
@@ -134,7 +111,6 @@
             color: var(--dark-text);
             letter-spacing: -0.5px;
         }
-
         h2::after {
             content: "";
             display: block;
@@ -144,48 +120,32 @@
             margin-top: 0.75rem;
             border-radius: 2px;
         }
-
         p {
             margin-bottom: 1.5rem;
             color: var(--body-text);
             font-size: 1.05rem;
         }
-
         strong {
             color: var(--dark-text);
             font-weight: 600;
         }
-
         /* HERO */
-
         #hero {
             max-width: 100%;
             background-color: var(--dark-bg);
-            
             background-image:
-                radial-gradient(
-                    circle at 80% 20%,
-                    rgba(58, 196, 224, 0.12) 0%,
-                    transparent 50%
-                ),
-                radial-gradient(
-                    circle at 20% 80%,
-                    rgba(230, 115, 0, 0.08) 0%,
-                    transparent 50%
-                ),
+                radial-gradient(circle at 80% 20%, rgba(58, 196, 224, 0.12) 0%, transparent 50%),
+                radial-gradient(circle at 20% 80%, rgba(230, 115, 0, 0.08) 0%, transparent 50%),
                 url("Picture1.png");
-            
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             padding: 13rem 2rem 9rem;
         }
-
         .hero-container {
             max-width: 800px;
             margin: 0 auto;
         }
-
         .tagline {
             font-size: 1.1rem;
             color: var(--cyan);
@@ -194,7 +154,6 @@
             letter-spacing: 1px;
             text-transform: uppercase;
         }
-
         .hero-text {
             font-size: 1.2rem;
             color: rgba(255, 255, 255, 0.85);
@@ -202,16 +161,13 @@
             font-weight: 300;
             max-width: 720px;
         }
-
         /* INDICATION TAGS */
-
         .indications {
             display: flex;
             flex-wrap: wrap;
             gap: 0.75rem;
             margin-top: 2rem;
         }
-
         .indication-tag {
             background: var(--light-bg);
             color: var(--dark-text);
@@ -222,35 +178,29 @@
             font-weight: 500;
             transition: all 0.2s ease;
         }
-
         .indication-tag:hover {
             border-color: var(--cyan);
             background-color: rgba(58, 196, 224, 0.05);
             color: var(--cyan-hover);
         }
-
         /* VALIDATION */
-
         #validation {
             max-width: 100%;
             background: var(--light-bg);
             border-top: 1px solid var(--border-color);
             border-bottom: 1px solid var(--border-color);
         }
-
         .validation-container {
             max-width: 1100px;
             margin: 0 auto;
             padding: 0 2rem;
         }
-
         .highlights {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
             margin-top: 3rem;
         }
-
         .highlight-card {
             background: var(--white);
             padding: 2.2rem;
@@ -259,60 +209,45 @@
             box-shadow:
                 0 4px 6px -1px rgba(0, 0, 0, 0.03),
                 0 2px 4px -1px rgba(0, 0, 0, 0.02);
-            transition:
-                transform 0.2s ease,
-                box-shadow 0.2s ease;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
-
         .highlight-card:hover {
             transform: translateY(-4px);
             box-shadow:
                 0 12px 20px -6px rgba(0, 0, 0, 0.06),
                 0 4px 10px -4px rgba(0, 0, 0, 0.03);
         }
-
         .highlight-card h3 {
             font-size: 1.2rem;
             margin-bottom: 1rem;
             color: var(--dark-text);
         }
-
-        .highlight-card p {
-            margin-bottom: 0;
-            font-size: 1rem;
-        }
-
+        .highlight-card p { margin-bottom: 0; font-size: 1rem; }
         /* PUBLICATIONS */
-
         #publications {
             border-bottom: 1px solid var(--border-color);
         }
-
         .pub-list {
             display: flex;
             flex-direction: column;
             gap: 2rem;
             margin-top: 2.5rem;
         }
-
         .pub-item {
             border-left: 3px solid var(--cyan);
             padding-left: 1.5rem;
         }
-
         .pub-title {
             font-size: 1.12rem;
             font-weight: 600;
             color: var(--dark-text);
             margin-bottom: 0.5rem;
         }
-
         .pub-meta {
             font-size: 0.95rem;
             color: var(--body-text);
             margin-bottom: 0.75rem;
         }
-
         .pub-link {
             display: inline-flex;
             align-items: center;
@@ -322,24 +257,113 @@
             border-bottom: 1px solid transparent;
             transition: border-color 0.2s ease;
         }
-
-        .pub-link:hover {
-            border-color: var(--orange);
+        .pub-link:hover { border-color: var(--orange); }
+        /* ── ABOUT ── */
+        #about {
+            border-bottom: 1px solid var(--border-color);
         }
-
+        /* ── NEWS ── */
+        #news {
+            max-width: 100%;
+            background: var(--light-bg);
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+        }
+        .news-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        .news-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.75rem;
+            margin-top: 2.5rem;
+        }
+        .news-item {
+            background: var(--white);
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            padding: 2rem 2.2rem;
+            display: flex;
+            gap: 2rem;
+            align-items: flex-start;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .news-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px -6px rgba(0, 0, 0, 0.07);
+        }
+        .news-date {
+            flex-shrink: 0;
+            background: var(--dark-bg);
+            color: var(--cyan);
+            font-size: 0.82rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            white-space: nowrap;
+            margin-top: 0.15rem;
+        }
+        .news-body h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--dark-text);
+            margin-bottom: 0.5rem;
+        }
+        .news-body p {
+            font-size: 0.98rem;
+            margin-bottom: 0.75rem;
+        }
+        /* ── SUPPORT ── */
+        #support {
+            border-bottom: 1px solid var(--border-color);
+        }
+        .supporter-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 2.5rem;
+            align-items: center;
+        }
+        .supporter-badge {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            background: var(--light-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 0.75rem 1.4rem;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--dark-text);
+            transition: all 0.2s ease;
+        }
+        .supporter-badge::before {
+            content: "";
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--cyan);
+            flex-shrink: 0;
+        }
+        .supporter-badge:hover {
+            border-color: var(--cyan);
+            background: rgba(58, 196, 224, 0.05);
+        }
         /* CONTACT */
-
         #contact {
             max-width: 100%;
             background: var(--light-bg);
         }
-
         .contact-container {
             max-width: 1100px;
             margin: 0 auto;
             padding: 0 2rem;
         }
-
         .contact-info {
             background: var(--white);
             padding: 2.5rem;
@@ -349,31 +373,23 @@
             display: inline-block;
             min-width: 320px;
         }
-
         .contact-line {
             display: flex;
             gap: 1rem;
             margin-bottom: 1rem;
         }
-
         .contact-label {
             font-weight: 600;
             min-width: 90px;
             color: var(--dark-text);
         }
-
         .contact-value a {
             color: var(--orange);
             text-decoration: none;
             border-bottom: 1px solid transparent;
         }
-
-        .contact-value a:hover {
-            border-color: var(--orange);
-        }
-
+        .contact-value a:hover { border-color: var(--orange); }
         /* FOOTER */
-
         footer {
             text-align: center;
             padding: 3rem 2rem;
@@ -382,125 +398,87 @@
             font-size: 0.9rem;
             border-top: 1px solid rgba(255, 255, 255, 0.08);
         }
-
-        /* RESPONSIVE */
-
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2.5rem;
-            }
-
-            section {
-                padding: 5rem 1.5rem;
-            }
-
-            #hero {
-                padding: 11rem 1.5rem 6rem;
-            }
-
-            .highlights {
-                grid-template-columns: 1fr;
-            }
-
-            .highlight-card {
-                padding: 2rem;
-            }
+        .footer-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
         }
-
+        .footer-logo-img {
+            height: 48px;
+            width: auto;
+            object-fit: contain;
+            opacity: 0.85;
+            transition: opacity 0.2s ease;
+        }
+        .footer-logo-img:hover { opacity: 1; }
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            section { padding: 5rem 1.5rem; }
+            #hero { padding: 11rem 1.5rem 6rem; }
+            .highlights { grid-template-columns: 1fr; }
+            .highlight-card { padding: 2rem; }
+            .news-item { flex-direction: column; gap: 1rem; }
+        }
         @media (max-width: 550px) {
-            .nav-container {
-                flex-direction: column;
-                gap: 1rem;
-            }
-
-            nav ul {
-                justify-content: center;
-                gap: 1rem;
-            }
-
-            #hero {
-                padding-top: 14rem;
-            }
-
-            .contact-info {
-                width: 100%;
-                min-width: unset;
-            }
-
-            .contact-line {
-                flex-direction: column;
-                gap: 0.3rem;
-            }
+            .nav-container { flex-direction: column; gap: 1rem; }
+            nav ul { justify-content: center; gap: 1rem; }
+            #hero { padding-top: 14rem; }
+            .contact-info { width: 100%; min-width: unset; }
+            .contact-line { flex-direction: column; gap: 0.3rem; }
         }
     </style>
 </head>
-
 <body>
-
     <nav>
         <div class="nav-container">
-
             <a href="#hero" class="logo-link" aria-label="Citrapeutics™ Home">
-                <img
-                    src="Citrapeutics Inverted Color.png"
-                    alt="Citrapeutics™ Logo"
-                    class="logo-img"
-                />
+                <img src="Citrapeutics Inverted Color.png" alt="Citrapeutics™ Logo" class="logo-img" />
             </a>
-
             <ul>
                 <li><a href="#science">Science</a></li>
                 <li><a href="#validation">Validation</a></li>
                 <li><a href="#publications">Publications</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#support">Support</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-
         </div>
     </nav>
-
+    <!-- ═══════════════ HERO ═══════════════ -->
     <section id="hero">
         <div class="hero-container">
-
-            <div class="tagline">
-                First-in-Class ACOD1 Inhibitors
-            </div>
-
-            <h1>
-                Targeting Immunometabolism for Next-Generation Cancer Therapy
-            </h1>
-
+            <div class="tagline">First-in-Class ACOD1 Inhibitors</div>
+            <h1>Targeting Immunometabolism for Next-Generation Cancer Therapy</h1>
             <p class="hero-text">
                 Citrapeutics™ is developing oral small-molecule inhibitors targeting
-                ACOD1 (IRG1), a key immunometabolic enzyme which drives immune suppression 
+                ACOD1 (IRG1), a key immunometabolic enzyme which drives immune suppression
                 in tumour tissue. Our platform aims to restore anti-tumor immunity
                 across multiple solid tumor indications.
             </p>
-
         </div>
     </section>
-
+    <!-- ═══════════════ SCIENCE ═══════════════ -->
     <section id="science">
-
         <div class="section-inner">
-
             <h2>Scientific Platform</h2>
-
             <p>
                 ACOD1 is a metabolic enzyme expressed in activated myeloid immune cells (macrophages, dendritic cells, granulocytes) that
-                that synthesizes the immunosuppressive metabolite itaconate.
+                synthesizes the immunosuppressive metabolite itaconate.
             </p>
-
             <p>
                 Elevated ACOD1 activity has been associated with impaired T-cell
                 function and tumor immune evasion.
             </p>
-
             <p>
                 Citrapeutics™ is advancing a pipeline of selective, orally bioavailable
                 small molecules designed to inhibit ACOD1 and reprogram the tumor
                 microenvironment. Our therapeutics are being developed for use as a monotherapy and potentially as combination therapy to achieve durable anti-tumor immunity.
             </p>
-
             <div class="indications">
                 <div class="indication-tag">Melanoma</div>
                 <div class="indication-tag">NSCLC</div>
@@ -508,157 +486,201 @@
                 <div class="indication-tag">Triple-Negative Breast Cancer</div>
                 <div class="indication-tag">Solid Tumors</div>
             </div>
-
         </div>
-
     </section>
-
+    <!-- ═══════════════ VALIDATION ═══════════════ -->
     <section id="validation">
-
         <div class="validation-container">
-
             <div class="section-inner">
-
                 <h2>Preclinical Validation</h2>
-
                 <p>
                     Our research demonstrates that ACOD1 inhibition can enhance immune
                     activation. We have established robust efficacy evidence across three distinct preclinical models.
                 </p>
-
             </div>
-
             <div class="highlights">
-
                 <div class="highlight-card">
                     <h3>In Vivo Efficacy</h3>
-
-                    <p>
-                        Demonstrated anti-tumor activity and tumor growth inhibition across 3 distinct preclinical models.
-                    </p>
+                    <p>Demonstrated anti-tumor activity and tumor growth inhibition across 3 distinct preclinical models.</p>
                 </div>
-
                 <div class="highlight-card">
                     <h3>Immune Reactivation</h3>
-
                     <p>
                         Restoration of T-cell effector function, reduction of immunosuppressive T cell populations and reversal of
                         immunosuppressive signaling in tumor-associated myeloid cells.
                     </p>
                 </div>
-
                 <div class="highlight-card">
                     <h3>Oral Small Molecules</h3>
-
-                    <p>
-                        Selective inhibitors optimized for potency, oral bioavailability,
-                        and scalable manufacturing.
-                    </p>
+                    <p>Selective inhibitors optimized for potency, oral bioavailability, and scalable manufacturing.</p>
                 </div>
-
             </div>
-
         </div>
-
     </section>
-
+    <!-- ═══════════════ PUBLICATIONS ═══════════════ -->
     <section id="publications">
-
         <div class="section-inner">
-
             <h2>Selected Publications</h2>
-
             <p>
                 Representative scientific publications and foundational research related
                 to ACOD1 biology and tumor immunometabolism.
             </p>
-
             <div class="pub-list">
-
                 <div class="pub-item">
-
-                    <div class="pub-title">
-                        ACOD1 a new traget in immuno-oncology
-                    </div>
-
-                    <div class="pub-meta">
-                        Trends in Endocrinology and Metabolism (Waqas et al)
-                    </div>
-
-                    <a href="[linkinghub.elsevier.com](https://linkinghub.elsevier.com/retrieve/pii/S1043276024000869)" class="pub-link" target="_blank" rel="noopener noreferrer">
-                        View Publication →
-                    </a>
-
+                    <div class="pub-title">ACOD1 a new target in immuno-oncology</div>
+                    <div class="pub-meta">Trends in Endocrinology and Metabolism (Waqas et al)</div>
+                    <a href="[linkinghub.elsevier.com](https://linkinghub.elsevier.com/retrieve/pii/S1043276024000869)" class="pub-link" target="_blank" rel="noopener noreferrer">View Publication →</a>
                 </div>
-
                 <div class="pub-item">
-                    <div class="pub-title">
-                        ACOD1 and itaconate in cancer immunometabolism
-                    </div>
-                    <div class="pub-meta">
-                        Science Advances
-                    </div>
-                    <a href="[science.org](https://www.science.org/doi/10.1126/sciadv.adg0654)" class="pub-link" target="_blank" rel="noopener noreferrer">
-                        View Publication →
-                    </a>
+                    <div class="pub-title">ACOD1 and itaconate in cancer immunometabolism</div>
+                    <div class="pub-meta">Science Advances</div>
+                    <a href="[science.org](https://www.science.org/doi/10.1126/sciadv.adg0654)" class="pub-link" target="_blank" rel="noopener noreferrer">View Publication →</a>
                 </div>
-
                 <div class="pub-item">
-                    <div class="pub-title">
-                        ACOD1-mediated itaconate production drives tumor immune evasion
-                    </div>
-                    <div class="pub-meta">
-                        Proceedings of the National Academy of Sciences (PNAS)
-                    </div>
-                    <a href="[pnas.org](https://www.pnas.org/doi/pdf/10.1073/pnas.1908770116)" class="pub-link" target="_blank" rel="noopener noreferrer">
-                        View Publication →
-                    </a>
+                    <div class="pub-title">ACOD1-mediated itaconate production drives tumor immune evasion</div>
+                    <div class="pub-meta">Proceedings of the National Academy of Sciences (PNAS)</div>
+                    <a href="[pnas.org](https://www.pnas.org/doi/pdf/10.1073/pnas.1908770116)" class="pub-link" target="_blank" rel="noopener noreferrer">View Publication →</a>
                 </div>
-
             </div>
-
         </div>
-
     </section>
-
-    <section id="contact">
-
-        <div class="contact-container">
-
+    <!-- ═══════════════ ABOUT ═══════════════ -->
+    <section id="about">
+        <div class="section-inner">
+            <h2>About Us</h2>
+            <p>
+                Citrapeutics™ was founded to translate a decade of foundational research
+                into a new class of cancer immunotherapy. Our scientific origins trace back
+                to the <strong>Helmholtz Centre for Infection Research (HZI)</strong>, where
+                pioneering work on immunometabolism and itaconate biology laid the groundwork
+                for ACOD1 as a compelling oncology target.
+            </p>
+            <p>
+                The research underpinning our platform was conducted in the laboratory of
+                <strong>Prof. Dr. Frank Pessler</strong>, Research Group Leader at HZI and
+                TWINCORE (Centre for Experimental and Clinical Infection Research). Prof. Pessler's
+                group has made seminal contributions to understanding the role of ACOD1-derived
+                itaconate in immune regulation and disease, work that directly informs
+                Citrapeutics™' drug discovery strategy.
+            </p>
+            <p>
+                We are a preclinical-stage biotech committed to developing first-in-class,
+                orally bioavailable small-molecule ACOD1 inhibitors with the potential to
+                transform outcomes for patients with solid tumors.
+            </p>
+            <a
+                href="[twincore.de](https://twincore.de/labs/pessler-lab)"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="pub-link"
+            >
+                Visit the Pessler Lab at TWINCORE / HZI →
+            </a>
+        </div>
+    </section>
+    <!-- ═══════════════ NEWS ═══════════════ -->
+    <section id="news">
+        <div class="news-container">
             <div class="section-inner">
-
+                <h2>News</h2>
+                <p>Latest recognition and milestones for Citrapeutics™.</p>
+            </div>
+            <div class="news-list">
+                <div class="news-item">
+                    <div class="news-date">2025</div>
+                    <div class="news-body">
+                        <h3>IBT Competitive Grant — Helmholtz Enterprise Funding Awarded</h3>
+                        <p>
+                            Citrapeutics™ was selected through the highly competitive IBT (Innovation
+                            Fund for Biotechnology) grant process administered by the Helmholtz Association.
+                            The IBT Lower Saxony programme supports innovative biomedical ideas with
+                            nearly €2.5 million of funding across selected projects — a significant
+                            validation of our ACOD1 inhibition approach.
+                        </p>
+                        <a
+                            href="[helmholtz-hzi.de](https://www.helmholtz-hzi.de/en/media-center/newsroom/news-detail/the-ibt-lower-saxony-supports-innovative-biomedical-ideas-with-nearly-25-million-euros-of-funding/)"
+                            class="pub-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Read the announcement →
+                        </a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">2025</div>
+                    <div class="news-body">
+                        <h3>Biovaria 2025 — Startup Pitch Award</h3>
+                        <p>
+                            Citrapeutics™ was recognised at <strong>Biovaria 2025</strong>, one of
+                            Europe's leading partnering conferences for life science innovation.
+                            Our selection as a featured startup in the pitch programme highlights
+                            the growing interest in immunometabolic targets for next-generation
+                            cancer therapy.
+                        </p>
+                        <a
+                            href="[biovaria.org](https://www.biovaria.org/startup-pitch-partner/startups-2025)"
+                            class="pub-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View Biovaria 2025 startups →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ═══════════════ SUPPORT ═══════════════ -->
+    <section id="support">
+        <div class="section-inner">
+            <h2>Support &amp; Partners</h2>
+            <p>
+                Citrapeutics™ is proud to be supported by leading academic, entrepreneurial,
+                and funding institutions committed to advancing biomedical innovation.
+            </p>
+            <div class="supporter-grid">
+                <div class="supporter-badge">IBT (Innovation Fund for Biotechnology)</div>
+                <div class="supporter-badge">Helmholtz Enterprise</div>
+                <div class="supporter-badge">Life Science Stiftung</div>
+                <div class="supporter-badge">HZI — Helmholtz Centre for Infection Research</div>
+            </div>
+        </div>
+    </section>
+    <!-- ═══════════════ CONTACT ═══════════════ -->
+    <section id="contact">
+        <div class="contact-container">
+            <div class="section-inner">
                 <h2>Contact</h2>
-
                 <p>
                     For partnership, scientific, or investor inquiries, please contact
                     the Citrapeutics™ team.
                 </p>
-
                 <div class="contact-info">
-
                     <div class="contact-line">
                         <div class="contact-label">Email</div>
-
                         <div class="contact-value">
-                            <a href="mailto:info@stavendo.com">
-                                info@stavendo.com
-                            </a>
+                            <a href="mailto:info@stavendo.com">info@stavendo.com</a>
                         </div>
                     </div>
-
-                    <!-- Website row removed per request -->
-
                 </div>
-
             </div>
-
         </div>
-
     </section>
-
+    <!-- ═══════════════ FOOTER ═══════════════ -->
     <footer>
+        <div class="footer-logos">
+            <!--
+                Drop your HZI Startup logo file into the same folder as this HTML file,
+                then replace "HZI_spinoff_badge_quer" below with the actual filename.
+            -->
+            <img
+                src="HZI_spinoff_badge_quer"
+                alt="HZI Startup"
+                class="footer-logo-img"
+            />
+        </div>
         © 2026 Citrapeutics™. All rights reserved.
     </footer>
-
 </body>
 </html>
