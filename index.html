@@ -86,6 +86,7 @@
             display: block;
             object-fit: contain;
         }
+        .nav-toggle { display: none; }   /* menu button: phones only */
         nav ul {
             list-style: none;
             display: flex;
@@ -516,9 +517,49 @@
             .validation-container, .news-container { padding: 0; }
         }
         @media (max-width: 550px) {
-            .nav-container { flex-direction: column; gap: 1rem; }
-            nav ul { justify-content: center; gap: 0.8rem; }
-            #hero { padding-top: 14rem; }
+            /* ── collapsible phone menu ── */
+            nav { padding: 0.75rem 1.25rem; }
+            .nav-container { flex-wrap: wrap; }
+            .logo-img { height: 34px; }
+            .nav-toggle {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 5px;
+                width: 44px;
+                height: 44px;
+                padding: 0 10px;
+                background: transparent;
+                border: 1px solid rgba(255,255,255,0.18);
+                border-radius: 8px;
+                cursor: pointer;
+            }
+            .nav-toggle span {
+                display: block;
+                height: 2px;
+                background: rgba(255,255,255,0.85);
+                border-radius: 2px;
+                transition: transform 0.2s ease, opacity 0.2s ease;
+            }
+            nav.open .nav-toggle span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+            nav.open .nav-toggle span:nth-child(2) { opacity: 0; }
+            nav.open .nav-toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+            nav ul {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                gap: 0;
+                margin-top: 0.75rem;
+                border-top: 1px solid rgba(255,255,255,0.08);
+            }
+            nav.open ul { display: flex; }
+            nav ul li a {
+                display: block;
+                padding: 0.85rem 0.25rem;
+                font-size: 1rem;
+                border-bottom: 1px solid rgba(255,255,255,0.06);
+            }
+            #hero { padding-top: 8rem; }
             .supporter-grid { gap: 1rem; }
             .supporter-logo { height: 96px; padding: 1rem; }
             .supporter-logo img { max-height: 48px; }
@@ -535,7 +576,10 @@
             <a href="#hero" class="logo-link" aria-label="Citrapeutics Home">
                 <img src="Citrapeutics Inverted Color.png" alt="Citrapeutics Logo" class="logo-img" />
             </a>
-            <ul>
+            <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul id="nav-menu">
                 <li><a href="#science">Science</a></li>
                 <li><a href="#validation">Validation</a></li>
                 <li><a href="#publications">Publications</a></li>
@@ -922,5 +966,24 @@
         </div>
         &copy; 2026 Citrapeutics. All rights reserved.
     </footer>
+    <script>
+        // Phone menu: open/close with the ☰ button, close after choosing a link
+        (function () {
+            var nav = document.querySelector('nav');
+            var btn = document.querySelector('.nav-toggle');
+            if (!nav || !btn) return;
+            function setOpen(open) {
+                nav.classList.toggle('open', open);
+                btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+                btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+            }
+            btn.addEventListener('click', function () {
+                setOpen(!nav.classList.contains('open'));
+            });
+            nav.querySelectorAll('ul a').forEach(function (a) {
+                a.addEventListener('click', function () { setOpen(false); });
+            });
+        })();
+    </script>
 </body>
 </html>
