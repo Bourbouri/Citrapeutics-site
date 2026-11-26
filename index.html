@@ -331,20 +331,18 @@
         /* ── SUPPORT ── */
         #support { border-bottom: 1px solid var(--border-color); }
         .supporter-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);   /* even 2 x 2 layout */
+            gap: 1.5rem;
             margin-top: 2.5rem;
-            align-items: center;
-            justify-content: flex-start;
         }
         .supporter-logo {
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 96px;
-            padding: 0.75rem 1.5rem;
-            background: var(--light-bg);
+            height: 120px;
+            padding: 1.25rem 1.5rem;
+            background: #ffffff;   /* white so logos with white backgrounds blend in */
             border: 1px solid var(--border-color);
             border-radius: 12px;
             transition: border-color 0.2s ease, box-shadow 0.2s ease;
@@ -355,9 +353,10 @@
             box-shadow: 0 4px 12px rgba(58,196,224,0.12);
         }
         .supporter-logo img {
-            height: 60px;
+            max-height: 64px;
+            max-width: 100%;
             width: auto;
-            max-width: 240px;
+            height: auto;
             object-fit: contain;
         }
         /* ── CONTACT (dark banner + form) ── */
@@ -521,6 +520,8 @@
             nav ul { justify-content: center; gap: 0.8rem; }
             #hero { padding-top: 14rem; }
             .supporter-grid { gap: 1rem; }
+            .supporter-logo { height: 96px; padding: 1rem; }
+            .supporter-logo img { max-height: 48px; }
             /* keep the hero headline inside the screen on phones */
             h1 { font-size: 2rem; overflow-wrap: break-word; hyphens: auto; }
             .tagline { font-size: 0.8rem; }
