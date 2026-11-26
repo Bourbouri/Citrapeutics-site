@@ -405,6 +405,17 @@
             border-color: var(--cyan);
             color: var(--cyan);
         }
+        .contact-email {
+            margin-top: 1.5rem;
+            font-size: 1.05rem;
+            color: rgba(255,255,255,0.62);
+        }
+        .contact-email a {
+            color: var(--cyan);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .contact-email a:hover { text-decoration: underline; }
         .icon-linkedin { width: 20px; height: 20px; fill: currentColor; }
         /* form */
         .contact-form {
@@ -537,12 +548,12 @@
     <!-- ═══════════ HERO ═══════════ -->
     <section id="hero">
         <div class="hero-container">
-            <div class="tagline">First-on-Target First-in-Class ACOD1 Inhibitors</div>
+            <div class="tagline">First-on-Target, First-in-Class ACOD1 Inhibitors</div>
             <h1>Targeting Immunometabolism for Next-Generation Cancer Therapy</h1>
             <p class="hero-text">
                 Citrapeutics is developing <b>orally available</b> small-molecule inhibitors targeting
                 ACOD1 (IRG1), a key immunometabolic enzyme which drives immune suppression
-                in tumour tissue. Our platform aims to restore anti-tumor immunity
+                in tumor tissue. Our platform aims to restore anti-tumor immunity
                 across multiple solid tumor indications.
             </p>
         </div>
@@ -618,7 +629,7 @@
             <div class="pub-list">
                 <div class="pub-item">
                     <div class="pub-title">ACOD1 a new target in immuno-oncology</div>
-                    <div class="pub-meta">Trends in Endocrinology and Metabolism (Waqas et al)</div>
+                    <div class="pub-meta">Trends in Endocrinology and Metabolism (Waqas et al.)</div>
                     <a href="https://linkinghub.elsevier.com/retrieve/pii/S1043276024000869" class="pub-link" target="_blank" rel="noopener noreferrer">View Publication →</a>
                 </div>
                 <div class="pub-item">
@@ -739,9 +750,9 @@
                         <h3>IBT Lower Saxony — €1.4 million competitive grant awarded (2025)</h3>
                         <p>
                             Citrapeutics was selected through the highly competitive IBT
-                            (Institute for Biomedical Translation) grant programme in Lower
-                            Saxony. The IBT is supporting Citrapeutics with a 
-                            €1.4 million of funding grant — a significant
+                            (Institute for Biomedical Translation) grant program in Lower
+                            Saxony. The IBT is supporting Citrapeutics with a
+                            €1.4 million grant — a significant
                             validation of our strategy and approach.
                         </p>
                         <a
@@ -764,10 +775,10 @@
                     <div class="news-body">
                         <h3>Biovaria 2025 — Citrapeutics winner of the Startup Pitch Award</h3>
                         <p>
-                            Citrapeutics was recognised at <strong>Biovaria 2025</strong>,
+                            Citrapeutics was recognized at <strong>Biovaria 2025</strong>,
                             one of Europe's leading partnering conferences for life science
                             innovation. Our selection as a featured startup in the pitch
-                            programme — winning in the "Rising Startup" category —
+                            program — winning in the "Rising Startup" category —
                             highlights the compelling science that underpins Citrapeutics and 
                             the growing interest in immunometabolic targets for
                             next-generation cancer therapy.
@@ -829,6 +840,10 @@
                     investor conversations. Fill in the form and we will get back
                     to you as soon as possible.
                 </p>
+                <p class="contact-email">
+                    Or email us directly:
+                    <a href="mailto:info@citrapeutics.com">info@citrapeutics.com</a>
+                </p>
                 <div class="contact-social-row">
                     <a
                         href="https://www.linkedin.com/company/citrapeutics"
@@ -877,7 +892,7 @@
                 <input
                     type="text"
                     name="organisation"
-                    placeholder="Organisation (optional)"
+                    placeholder="Organization (optional)"
                     autocomplete="organization"
                 />
                 <input
